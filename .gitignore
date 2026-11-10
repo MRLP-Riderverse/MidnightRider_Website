@@ -1,0 +1,28 @@
+# MidnightRider_Website
+
+# Editor / operating-system noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local development output
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+
+# Keep personal Notecore captures outside this repository.
