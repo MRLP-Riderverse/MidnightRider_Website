@@ -5,6 +5,8 @@ This folder holds actionable, project-local website work and durable handoffs. I
 Start new sessions with [`PROJECT_BRIEF.md`](PROJECT_BRIEF.md) for the distilled intent, design decisions, open questions, privacy boundary, and resumption workflow. Update it only when decisions change; keep transient task status in checklists or handoff notes.
 
 ## Active
+- [x] Add `strays_pfp_LP.png` as supporting WIP-section artwork: right column on wide screens, below copy on mobile; keep `strays_pfp_LP2.png` ignored and do not replace the current portrait. **Done locally:** image loads at 1500 px source size; layout switches from two columns at 1440 px to a stacked 343 px content column at 390 px, with no horizontal overflow.
+- [x] Add one shared top divider to `.site-footer` and verify its appearance on Home and Socials. **Done locally:** shared CSS adds a 1 px `var(--line)` top border; verified on both pages at 390 px and 1440 px widths, with no horizontal overflow; owner reviewed the viewport visuals as good.
 - [x] Review the owner's first visual/copy pass; preserve the revised personal voice, confirm the X profile link as owner-approved, and keep Projects paused/unlinked.
 - [ ] Shape a public-safe content outline for a future identity/about page and a “what MRLP does” page; keep real name, birth details, hometown/family history, and lore specifics out until the owner chooses what to publish.
 - [x] Create the initial Home → Socials path with the supplied Instagram profile and consistent home links.

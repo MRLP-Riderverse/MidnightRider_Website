@@ -27,6 +27,5 @@ __pycache__/
 
 # Keep personal Notecore captures outside this repository.
 
-# Older PFP options are retained locally but are not the selected public image.
-assets/images/strays_pfp_LP.png
+# Keep the larger unused PFP option local-only; strays_pfp_LP.png is approved supporting site artwork.
 assets/images/strays_pfp_LP2.png
