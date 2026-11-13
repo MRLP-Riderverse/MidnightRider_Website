@@ -92,12 +92,12 @@ a:focus-visible { outline: 2px solid var(--green); outline-offset: 5px; }
   position: relative;
   z-index: 2;
   margin: 1.4rem 0 0;
-  font-size: clamp(5rem, 15vw, 12.5rem);
+  font-size: clamp(3.5rem, 12.8vw, 12.5rem);
   font-weight: 650;
-  line-height: 0.78;
-  letter-spacing: -0.095em;
+  line-height: 0.88;
+  letter-spacing: -0.075em;
 }
-.welcome h1 span { color: var(--violet); }
+.welcome h1 .name-initial { color: var(--violet); }
 .welcome-copy {
   position: relative;
   z-index: 2;
@@ -172,7 +172,7 @@ a.social-link:hover .social-handle { color: var(--green); }
   .site-header { min-height: 4.25rem; }
   .wordmark { font-size: 0.85rem; }
   .welcome { min-height: min(720px, calc(100svh - 4.25rem)); padding-top: 5rem; padding-bottom: 6rem; }
-  .welcome h1 { font-size: clamp(4.6rem, 21vw, 8rem); }
+  .welcome h1 { font-size: clamp(3.15rem, 15vw, 6.5rem); }
   .welcome-copy { margin-top: 3.25rem; }
   .profile-avatar { top: 12%; width: 6rem; }
   .socials-intro { padding-top: 5rem; }
