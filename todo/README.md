@@ -19,7 +19,8 @@ Start new sessions with [`PROJECT_BRIEF.md`](PROJECT_BRIEF.md) for the distilled
 - [x] Keep the intentionally paused Projects draft local-only and unlinked until its content is ready; exclude it from public commits/deployment.
 - [x] Keep the unused older Strays PFP copies local-only by ignoring them in `.gitignore`; leave deletion/archive as the owner's choice.
 - [x] Verify both pages at phone (390 px), tablet (768 px), and desktop (1440 px): local links and icons resolve, image loads, footer and titles are consistent, no horizontal overflow; keyboard focus is visible and ordered; sticky header remains at the viewport top.
-- [ ] Review the exact public-safe file set and deployment after explicit commit/push approval; confirm the domain and fallback path separately.
+- [x] Review the exact public-safe file set and verify the approved commit/push deployment; commit `39746ea` was published and served at the canonical domain after the Pages build completed.
+- [ ] Confirm the domain and fallback path separately.
 - [x] Check the day's MidnightRider Notecore entries against the TODO board; preserve the owner's original capture and track actionable follow-ups here.
 - [ ] Refine the expanded-name headline: test letter spacing/legibility across narrow and wide screens; later prototype a tap-to-reveal full-name interaction (avoid hover-only behavior).
 
