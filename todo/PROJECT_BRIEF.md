@@ -14,7 +14,7 @@ Keep the code portable. The public address should be a replaceable configuration
 
 ## Established direction
 
-- Display name: **MidnightRider**; familiar short name: **MRLP**. The current introduction is **“But you can also call me MRLP.”**
+- Display name: **MidnightRider**; familiar short name: **MRLP**. Current homepage copy uses the owner's evolving first-person voice; do not restore earlier draft wording without being asked.
 - The header home link currently uses **⁜ MidnightRider.sol**. The dotted-cross glyph is temporary; replace it with the owner's logo asset when supplied, without assuming the glyph is the permanent logo.
 - Purple, green, and sable are palette exploration. The first charcoal/violet/green pass was considered a decent starting point and should remain for now, not be treated as locked brand standards.
 - The visitor should be able to learn who MRLP is and what MRLP does, and reach relevant online presences without being overwhelmed.
@@ -25,12 +25,12 @@ Keep the code portable. The public address should be a replaceable configuration
 ## Current prototype
 
 - Homepage tab title: **MRLP - MidnightRider.sol**; socials page title keeps its page context and the same identity.
-- The landing-page eyebrow is **“i am”**; the introduction is **“But you can also call me MRLP.”**
-- The first visitor path is **Home → Socials**. Instagram `@MidnightRiderLP` is linked to the supplied full profile URL with an Instagram tooltip. Discord, X, and Telegram are non-clickable **Coming soon** placeholders; do not invent handles or URLs.
+- The landing-page eyebrow is **“i am”**; the introduction is currently **“MRLP for short.”**
+- The first visitor path is **Home → Socials**. Instagram `@MidnightRiderLP` and the owner-confirmed X profile are linked; Discord and Telegram are non-clickable **Coming soon** placeholders. The homepage Socials link navigates to the Socials page in the same tab.
 - The selected `assets/images/LP_EYE.jpg` is the site's current PFP and PWA-icon source; do not use the older Strays PFPs as the current image. The JPEG is 2048 × 2048 (~164 KB) and is rendered as a small, borderless circle (128 px desktop / 96 px mobile).
 - `site.webmanifest` references 192 px / 512 px standard and maskable icons; `scripts/generate_pwa_icons.py` creates those, the 16 px / 32 px favicons, and the 180 px Apple touch icon in `assets/images/`.
-- Both pages show the same global footer content **“Created in 2026”** and shared footer styling; maintain that consistency.
-- The homepage's lower section uses one **“More, coming soon”** heading and a short paragraph—no repeated label or second Socials CTA.
+- Home and Socials use the same footer structure and shared styling; current footer wording is an owner-authored experiment. Keep it consistent sitewide as more pages are activated.
+- The homepage lower section is owner-authored teaser copy. A Projects page draft is deliberately paused, unlinked, and kept local-only until the owner resumes it.
 - Keep the palette and layout open to review; the project remains a draft.
 
 
