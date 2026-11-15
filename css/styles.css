@@ -23,7 +23,6 @@ body {
   margin: 0;
   background: var(--surface);
   color: var(--ink);
-  min-width: 320px;
 }
 
 a { color: inherit; }
@@ -33,7 +32,7 @@ a:focus-visible { outline: 2px solid var(--green); outline-offset: 5px; }
   position: absolute;
   top: 0.75rem;
   left: var(--page-gutter);
-  z-index: 5;
+  z-index: 20;
   transform: translateY(-160%);
   padding: 0.7rem 1rem;
   background: var(--ink);
@@ -64,7 +63,8 @@ a:focus-visible { outline: 2px solid var(--green); outline-offset: 5px; }
   font-weight: 650;
   letter-spacing: -0.03em;
 }
-.wordmark-mark { color: var(--green); font-size: 1.2rem; }
+.wordmark-mark { color: var(--green); font-size: 1.2rem; transition: text-shadow 160ms ease; }
+.wordmark:is(:hover, :focus-visible) .wordmark-mark { text-shadow: 0 0 0.8rem rgba(169, 217, 135, 0.8); }
 .welcome {
   min-height: min(760px, calc(100svh - 5rem));
   position: relative;
@@ -75,6 +75,7 @@ a:focus-visible { outline: 2px solid var(--green); outline-offset: 5px; }
   justify-content: center;
   isolation: isolate;
   background:
+    radial-gradient(ellipse at 7% 85%, rgba(169, 217, 135, 0.045), transparent 38%),
     radial-gradient(ellipse at 78% 46%, rgba(114, 87, 177, 0.15), transparent 38%),
     linear-gradient(135deg, #151719 0%, #111315 64%);
 }
@@ -97,7 +98,7 @@ a:focus-visible { outline: 2px solid var(--green); outline-offset: 5px; }
   line-height: 0.88;
   letter-spacing: -0.075em;
 }
-.welcome h1 .name-initial { color: var(--violet); }
+.welcome h1 .name-initial { color: var(--violet); text-shadow: 0 0 2.5rem rgba(182, 160, 255, 0.14); }
 .welcome-copy {
   position: relative;
   z-index: 2;
@@ -128,7 +129,7 @@ a:focus-visible { outline: 2px solid var(--green); outline-offset: 5px; }
 }
 .text-link span { transition: transform 160ms ease; }
 .welcome-copy .text-link { font-size: 1rem; font-weight: 600; }
-.text-link:hover span { transform: translate(3px, 3px); }
+.text-link:hover span, .text-link:focus-visible span { transform: translate(3px, 3px); }
 .welcome-index { position: absolute; right: var(--page-gutter); bottom: 2rem; color: var(--muted); font-size: 0.68rem; letter-spacing: 0.1em; }
 
 .about {
@@ -146,11 +147,14 @@ a:focus-visible { outline: 2px solid var(--green); outline-offset: 5px; }
   gap: clamp(2rem, 7vw, 7rem);
 }
 .about-content { max-width: 48rem; }
-.about-artwork { width: min(100%, 30rem); margin: 0 auto; }
+.about-artwork { width: min(100%, 30rem); margin: 0 auto; filter: drop-shadow(0 0 2.5rem rgba(182, 160, 255, 0.09)); }
 .about-artwork img { display: block; width: 100%; height: auto; }
 .about h2 { margin: 0; font-size: clamp(2.2rem, 6vw, 5.5rem); line-height: 1.04; letter-spacing: -0.065em; font-weight: 550; }
 .about h2 span { color: var(--violet); }
 .about p { max-width: 36rem; margin: 2rem 0 0; color: var(--muted); font-size: clamp(1rem, 1.8vw, 1.2rem); line-height: 1.8; }
+.about .about-invitation { color: var(--ink); font-size: clamp(1.1rem, 2.1vw, 1.45rem); line-height: 1.65; }
+.about-content p a { text-underline-offset: 0.18em; transition: color 160ms ease; }
+.about-content p a:is(:hover, :focus-visible) { color: var(--green); }
 
 .socials-page { min-height: calc(100svh - 5rem); display: flex; flex-direction: column; }
 .socials-intro { flex: 1; padding: clamp(5rem, 12vw, 9rem) var(--page-gutter); }
@@ -159,11 +163,14 @@ a:focus-visible { outline: 2px solid var(--green); outline-offset: 5px; }
 .social-list { max-width: 50rem; margin: clamp(2rem, 5vw, 4rem) 0 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
 .social-list li { border-bottom: 1px solid var(--line); }
 .social-link { display: grid; grid-template-columns: 1fr 1fr auto; align-items: center; gap: 1rem; min-height: 5.5rem; text-decoration: none; }
-a.social-link:hover .social-handle { color: var(--green); }
+a.social-link { transition: background-color 160ms ease; }
+a.social-link:is(:hover, :focus-visible) { background-color: rgba(169, 217, 135, 0.045); }
+a.social-link:is(:hover, :focus-visible) .social-handle { color: var(--green); }
+a.social-link:is(:hover, :focus-visible) .social-arrow { transform: translate(3px, -3px); }
 .social-placeholder { cursor: default; }
 .social-platform { font-size: 1.1rem; font-weight: 600; }
 .social-handle { color: var(--muted); transition: color 160ms ease; }
-.social-arrow { color: var(--green); font-size: 1.2rem; }
+.social-arrow { color: var(--green); font-size: 1.2rem; transition: transform 160ms ease; }
 
 .site-footer {
   min-height: 6rem;
@@ -188,7 +195,7 @@ a.social-link:hover .social-handle { color: var(--green); }
   .site-header { min-height: 4.25rem; }
   .wordmark { font-size: 0.85rem; }
   .welcome { min-height: min(720px, calc(100svh - 4.25rem)); padding-top: 5rem; padding-bottom: 6rem; }
-  .welcome h1 { font-size: clamp(3.15rem, 15vw, 6.5rem); }
+  .welcome h1 { font-size: clamp(2.4rem, 12.5vw, 6.5rem); }
   .welcome-copy { margin-top: 3.25rem; }
   .profile-avatar { top: 12%; width: 6rem; }
   .socials-intro { padding-top: 5rem; }
