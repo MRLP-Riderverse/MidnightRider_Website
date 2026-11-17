@@ -27,7 +27,7 @@ Keep the code portable. The public address should be a replaceable configuration
 - Homepage tab title: **MRLP - MidnightRider.sol**; socials page title keeps its page context and the same identity.
 - The landing-page eyebrow is **“i am”**; the introduction is currently **“MRLP for short.”**
 - The first visitor path is **Home → Socials**. Instagram `@MidnightRiderLP`, the owner-confirmed X profile, and Telegram `@PapiMidnight` are linked; Discord remains a non-clickable **Coming soon** placeholder. The homepage Socials link navigates to the Socials page in the same tab.
-- The selected `assets/images/LP_EYE.jpg` is the site's current PFP and PWA-icon source; do not use the older Strays PFPs as the current image. The JPEG is 2048 × 2048 (~164 KB) and is rendered as a borderless circle (160 px desktop / 112 px mobile).
+- The selected `assets/images/LP_EYE.jpg` is the site's current PFP and PWA-icon source; do not use the older Strays PFPs as the current image. The JPEG is 2048 × 2048 (~164 KB) and is rendered as a responsive borderless circle: 12–16 rem desktop, 8–10 rem tablet, 6 rem phone, and 5–6 rem on short landscape screens.
 - `site.webmanifest` references 192 px / 512 px standard and maskable icons; `scripts/generate_pwa_icons.py` creates those, the 16 px / 32 px favicons, and the 180 px Apple touch icon in `assets/images/`.
 - Home and Socials use the same footer structure and shared styling; current footer wording is an owner-authored experiment. Keep it consistent sitewide as more pages are activated.
 - The homepage lower section is owner-authored teaser copy. A Projects page draft is deliberately paused, unlinked, and kept local-only until the owner resumes it.
