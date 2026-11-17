@@ -185,6 +185,7 @@ a.social-link:is(:hover, :focus-visible) .social-arrow { transform: translate(3p
 }
 .footer-domain { color: var(--ink); text-decoration-color: var(--violet); text-underline-offset: 0.25em; }
 .footer-domain span { color: var(--green); padding-left: 0.35rem; }
+.footer-meta { display: grid; gap: 0.2rem; text-align: right; }
 
 @media (max-width: 820px) {
   .about-layout { grid-template-columns: 1fr; gap: 2.5rem; }
@@ -204,6 +205,7 @@ a.social-link:is(:hover, :focus-visible) .social-arrow { transform: translate(3p
   .social-handle { grid-column: 1; }
   .social-arrow { grid-column: 2; grid-row: 1 / span 2; }
   .site-footer { align-items: flex-start; flex-direction: column; justify-content: center; }
+  .footer-meta { text-align: left; }
 }
 
 @media (prefers-reduced-motion: reduce) {
