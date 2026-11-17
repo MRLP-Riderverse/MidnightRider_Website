@@ -23,7 +23,7 @@ The source for MidnightRider’s personal website: a welcoming web hub where new
 ## Structure
 
 - `index.html` — first welcome-page pass (draft; content and visual direction remain open)
-- `pages/` — `pages/socials.html` is live with Instagram and the owner-confirmed X profile; Discord and Telegram remain “Coming soon” placeholders. A Projects page is paused and remains local-only until its content is ready.
+- `pages/` — `pages/socials.html` links to Instagram, the owner-confirmed X profile, and Telegram `@PapiMidnight`; Discord remains “Coming soon.” A Projects page is paused and remains local-only until its content is ready.
 - `assets/` — source images plus optimized favicon, Apple touch, and PWA app-icon copies generated from `LP_EYE.jpg`
 - `site.webmanifest` — install metadata and PWA icon declarations
 - `css/`, `js/` — shared site styles and optional client behavior

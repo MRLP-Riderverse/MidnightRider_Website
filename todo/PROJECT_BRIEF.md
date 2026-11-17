@@ -26,11 +26,12 @@ Keep the code portable. The public address should be a replaceable configuration
 
 - Homepage tab title: **MRLP - MidnightRider.sol**; socials page title keeps its page context and the same identity.
 - The landing-page eyebrow is **“i am”**; the introduction is currently **“MRLP for short.”**
-- The first visitor path is **Home → Socials**. Instagram `@MidnightRiderLP` and the owner-confirmed X profile are linked; Discord and Telegram are non-clickable **Coming soon** placeholders. The homepage Socials link navigates to the Socials page in the same tab.
-- The selected `assets/images/LP_EYE.jpg` is the site's current PFP and PWA-icon source; do not use the older Strays PFPs as the current image. The JPEG is 2048 × 2048 (~164 KB) and is rendered as a small, borderless circle (128 px desktop / 96 px mobile).
+- The first visitor path is **Home → Socials**. Instagram `@MidnightRiderLP`, the owner-confirmed X profile, and Telegram `@PapiMidnight` are linked; Discord remains a non-clickable **Coming soon** placeholder. The homepage Socials link navigates to the Socials page in the same tab.
+- The selected `assets/images/LP_EYE.jpg` is the site's current PFP and PWA-icon source; do not use the older Strays PFPs as the current image. The JPEG is 2048 × 2048 (~164 KB) and is rendered as a borderless circle (160 px desktop / 112 px mobile).
 - `site.webmanifest` references 192 px / 512 px standard and maskable icons; `scripts/generate_pwa_icons.py` creates those, the 16 px / 32 px favicons, and the 180 px Apple touch icon in `assets/images/`.
 - Home and Socials use the same footer structure and shared styling; current footer wording is an owner-authored experiment. Keep it consistent sitewide as more pages are activated.
 - The homepage lower section is owner-authored teaser copy. A Projects page draft is deliberately paused, unlinked, and kept local-only until the owner resumes it.
+- A future CV destination is intended to be `/cv`, an unpassworded page reached by manually typing the URL; do not link it from homepage or site navigation. The owner does not want the CV file (which contains personal phone and email) in the public repository/site. Possible request channels to revisit: Riderverse's Shopify contact form, or Telegram with a clear company/request prompt. Check privacy, account discoverability, inbox routing, and visitor confirmation before choosing. No channel or implementation has been selected; the owner deferred the decision. No CV file/content is to be published.
 - Keep the palette and layout open to review; the project remains a draft.
 
 

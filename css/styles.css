@@ -110,7 +110,7 @@ a:focus-visible { outline: 2px solid var(--green); outline-offset: 5px; }
   z-index: 1;
   top: 28%;
   right: var(--page-gutter);
-  width: clamp(6rem, 8.9vw, 8rem);
+  width: clamp(7.5rem, 11vw, 10rem);
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
@@ -197,7 +197,7 @@ a.social-link:is(:hover, :focus-visible) .social-arrow { transform: translate(3p
   .welcome { min-height: min(720px, calc(100svh - 4.25rem)); padding-top: 5rem; padding-bottom: 6rem; }
   .welcome h1 { font-size: clamp(2.4rem, 12.5vw, 6.5rem); }
   .welcome-copy { margin-top: 3.25rem; }
-  .profile-avatar { top: 12%; width: 6rem; }
+  .profile-avatar { top: 12%; width: 7rem; }
   .socials-intro { padding-top: 5rem; }
   .social-link { grid-template-columns: 1fr auto; gap: 0.35rem 1rem; padding: 1rem 0; }
   .social-platform { grid-column: 1; }
