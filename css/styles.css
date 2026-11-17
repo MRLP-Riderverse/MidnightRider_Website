@@ -44,6 +44,17 @@ a:focus-visible { outline: 2px solid var(--green); outline-offset: 5px; }
   position: sticky;
   top: 0;
   z-index: 10;
+  transition: transform 180ms ease;
+}
+
+/* On phones, recover a little reading space while keeping the home link one scroll-up away. */
+@media (max-width: 640px) {
+  .site-header.is-scroll-hidden {
+    transform: translateY(-100%);
+  }
+}
+
+.site-header {
   min-height: 5rem;
   padding: 0 var(--page-gutter);
   display: flex;

@@ -24,6 +24,39 @@
         <span>MidnightRider.sol</span>
       </a>
     </header>
+    <script>
+      // Keep the home link available on phones without reserving header space while reading down.
+      (() => {
+        const header = document.querySelector('.site-header');
+        const mobile = window.matchMedia('(max-width: 640px)');
+        let previousY = window.scrollY;
+        let ticking = false;
+        const threshold = 8;
+
+        function updateHeader() {
+          const currentY = window.scrollY;
+          if (!mobile.matches || currentY <= 24) {
+            header.classList.remove('is-scroll-hidden');
+            previousY = currentY;
+          } else if (Math.abs(currentY - previousY) >= threshold) {
+            header.classList.toggle('is-scroll-hidden', currentY > previousY);
+            previousY = currentY;
+          }
+          ticking = false;
+        }
+
+        window.addEventListener('scroll', () => {
+          if (!ticking) {
+            ticking = true;
+            window.requestAnimationFrame(updateHeader);
+          }
+        }, { passive: true });
+        mobile.addEventListener('change', () => {
+          header.classList.remove('is-scroll-hidden');
+          previousY = window.scrollY;
+        });
+      })();
+    </script>
 
     <!-- The initials carry the accent; the expanded words stay readable as plain text. -->
     <main id="main">
